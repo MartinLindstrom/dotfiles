@@ -7,36 +7,32 @@ brew tap caskroom/versions
 # Install packages
 
 apps=(
-  alfred
-  atom
-  dash2
-  dropbox
+  1password
+  adobe-creative-cloud
+  cyberduck
   firefox
-  firefox-nightly
-  flux
-  glimmerblocker
+  # flux (Trying out nightshift)
   google-chrome
-  google-chrome-canary
-  google-drive
-  hammerspoon
-  kaleidoscope
+  handbrake
+  iterm2
   macdown
-  opera
-  screenflow
+  mpv
+  polymail
+  postman
+  resilio-sync
   slack
-  sourcetree
   spotify
+  steam
   sublime-text
-  transmit
-  virtualbox
-  vlc
-  webstorm
+  the-unarchiver
+  transmission
+  tunnelblick
+  vagrant
+  vmware-fusion
+  karabiner # Breaks here, so put it last
 )
 
 brew cask install "${apps[@]}"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
-
-# Link Hammerspoon config
-[ -d ~/.hammerspoon ] || ln -sfv "$DOTFILES_DIR/etc/hammerspoon/" ~/.hammerspoon

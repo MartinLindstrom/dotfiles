@@ -10,31 +10,35 @@ brew upgrade
 # Install packages
 
 apps=(
+  ansible
   bash-completion2
   bats
   battery
   coreutils
+  docker
+  docker-machine
   dockutil
   ffmpeg
-  fasd
   gifsicle
   git
   git-extras
+  git-lfs
   gnu-sed --with-default-names
   grep --with-default-names
-  hub
   httpie
+  hub
   imagemagick
   jq
-  mackup
-  peco
-  psgrep
+  micro
+  nmap
+  node
   python
   shellcheck
   ssh-copy-id
   tree
   wget
   wifi-password
+  yarn
 )
 
 brew install "${apps[@]}"
