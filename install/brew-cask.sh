@@ -7,29 +7,29 @@ brew tap caskroom/versions
 # Install packages
 
 apps=(
-  1password
-  adobe-creative-cloud
   cyberduck
   firefox
-  # flux (Trying out nightshift)
   google-chrome
   handbrake
+  iina
   iterm2
   macdown
+  mailspring
+  metasploit
   mpv
-  polymail
   postman
   resilio-sync
   slack
   spotify
   steam
   sublime-text
+  tableplus
   the-unarchiver
   transmission
   tunnelblick
-  vagrant
-  vmware-fusion
-  karabiner # Breaks here, so put it last
+  wireshark
+  # vagrant
+  # virtualbox
 )
 
 brew cask install "${apps[@]}"
